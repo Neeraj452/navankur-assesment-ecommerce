@@ -1,0 +1,101 @@
+/* productDetailed.module.css */
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+  margin: 2rem;
+  flex-direction: column;
+  gap: 1rem;
+}
+.heading {
+  margin: 0px;
+}
+
+.card {
+  display: flex;
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 80%;
+  max-width: 800px;
+  padding: 1rem;
+}
+
+.image {
+  flex: 1;
+  max-width: 50%;
+  object-fit: contain;
+  width: 20px;
+  height: 400px;
+}
+
+.details {
+  flex: 1;
+  padding: 20px;
+}
+
+.quantityControls {
+  margin-bottom: 10px;
+}
+
+.quantityControls button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.addToCart {
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.addToCart:hover {
+  background-color: #218838;
+}
+.btn_container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 20px;
+}
+.text_box {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.total {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  gap: 0.5rem;
+}
+.total_container {
+  display: flex;
+  overflow: hidden;
+  width: 80%;
+  max-width: 800px;
+  justify-content: end;
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    flex-direction: column;
+  }
+
+  .image {
+    max-width: 100%;
+    max-height: 300px;
+  }
+}
